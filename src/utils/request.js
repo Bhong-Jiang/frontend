@@ -2,8 +2,11 @@ import axios from 'axios'
 import { ElMessage } from 'element-plus'
 
 // 创建axios实例
+// 优先使用构建时注入的环境变量（VUE_APP_API_URL 或 VITE_APP_API_URL），否则回退到 '/'
+const apiBase = (process.env.VUE_APP_API_URL || process.env.VITE_APP_API_URL || '/')
+
 const service = axios.create({
-  baseURL: '/',
+  baseURL: apiBase,
   timeout: 10000
 })
 
