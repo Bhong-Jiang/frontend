@@ -4,7 +4,7 @@
     <div class="page-header">
       <div class="container">
         <h1 class="page-title">查询系统</h1>
-        <p class="page-subtitle">长时间无调用时会休眠，首次使用请耐心等待</p>
+        <p class="page-subtitle">后端使用render部署，故长时间无调用时会休眠，首次使用请耐心等待</p>
       </div>
     </div>
 
